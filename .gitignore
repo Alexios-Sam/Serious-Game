@@ -9,8 +9,11 @@
 [Tt]emp/
 [Uu]nityGenerated/
 Assets/Oculus*
+Assets/Oculus/*
 Assets/Plugins*
+Assets/Plugins/*
 Assets/Resources*
+Assets/Resources/*
 # file on crash reports
 sysinfo.txt
 # Unity3D generated meta files
