@@ -28,7 +28,11 @@ RenderSettings:
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SkyboxMaterial: {fileID: 2100000, guid: 79dd4f4230474b04db99af1333f90c69, type: 2}
+=======
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
 =======
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
@@ -47,8 +51,13 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sun: {fileID: 170076734}
   m_IndirectSpecularColor: {r: 0.614064, g: 0.5566908, b: 0.6915778, a: 1}
+=======
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+>>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
 =======
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
@@ -497,7 +506,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 0.11, y: -0.824, z: 1.13}
+=======
+  m_LocalPosition: {x: 0.11, y: -0.41, z: 1.13}
+>>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
 =======
   m_LocalPosition: {x: 0.11, y: -0.41, z: 1.13}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
