@@ -30,10 +30,14 @@ RenderSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b76d473... .
   m_SkyboxMaterial: {fileID: 2100000, guid: 79dd4f4230474b04db99af1333f90c69, type: 2}
 =======
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+<<<<<<< HEAD
 =======
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
@@ -43,6 +47,8 @@ RenderSettings:
 =======
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+=======
+>>>>>>> parent of b76d473... .
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -57,12 +63,16 @@ RenderSettings:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b76d473... .
   m_Sun: {fileID: 170076734}
   m_IndirectSpecularColor: {r: 0.614064, g: 0.5566908, b: 0.6915778, a: 1}
 =======
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+<<<<<<< HEAD
 =======
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
@@ -75,6 +85,8 @@ RenderSettings:
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+=======
+>>>>>>> parent of b76d473... .
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -517,10 +529,14 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b76d473... .
   m_LocalPosition: {x: 0.11, y: -0.824, z: 1.13}
 =======
   m_LocalPosition: {x: 0.11, y: -0.41, z: 1.13}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+<<<<<<< HEAD
 =======
   m_LocalPosition: {x: 0.11, y: -0.41, z: 1.13}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
@@ -530,6 +546,8 @@ Transform:
 =======
   m_LocalPosition: {x: 0.11, y: -0.41, z: 1.13}
 >>>>>>> parent of 3b54f38... Added Skybox and Planet Texture
+=======
+>>>>>>> parent of b76d473... .
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
