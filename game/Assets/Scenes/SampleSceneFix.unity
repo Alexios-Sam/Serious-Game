@@ -665,7 +665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 998753390}
-  FadeDuration: 7.5
+  FadeDuration: 10
 --- !u!4 &1161530882
 Transform:
   m_ObjectHideFlags: 0

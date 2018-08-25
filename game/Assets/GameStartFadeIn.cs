@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameStartFadeIn : MonoBehaviour
 {
     public Image Panel;
-    public float FadeDuration = 7.5f;
+    public float FadeDuration = 10.0f;
 
 	// Use this for initialization
 	void Start ()
