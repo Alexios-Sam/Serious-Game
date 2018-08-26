@@ -277,6 +277,9 @@ public class OVRGrabber : MonoBehaviour
 
             if (m_grabbedObj.snapOrientation)
             {
+                ///
+                /// 
+                /// 
                 m_grabbedObjectRotOff = m_gripTransform.localRotation;
                 if(m_grabbedObj.snapOffset)
                 {
@@ -285,6 +288,9 @@ public class OVRGrabber : MonoBehaviour
             }
             else
             {
+                ///
+                /// 
+                /// 
                 Quaternion relOri = Quaternion.Inverse(transform.rotation) * m_grabbedObj.transform.rotation;
                 m_grabbedObjectRotOff = relOri;
             }
