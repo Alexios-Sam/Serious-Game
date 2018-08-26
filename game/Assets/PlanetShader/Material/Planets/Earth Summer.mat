@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Earth
+  m_Name: Earth Summer
   m_Shader: {fileID: 4800000, guid: 2e0c34b3774c93542a711016b97aeb1f, type: 3}
   m_ShaderKeywords: MOBILE_OFF
   m_LightmapFlags: 5
@@ -95,7 +95,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: f54f3c23108450b41a9f137c58c9efac, type: 3}
+        m_Texture: {fileID: 2800000, guid: e3f63fca084549044815270dbb72af60, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex1:
