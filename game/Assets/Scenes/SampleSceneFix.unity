@@ -714,6 +714,7 @@ GameObject:
   - component: {fileID: 998753389}
   - component: {fileID: 998753391}
   - component: {fileID: 998753390}
+  - component: {fileID: 998753392}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -773,6 +774,27 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 998753388}
   m_CullTransparentMesh: 0
+--- !u!114 &998753392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 998753388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e37b18e1de52e4687fe5af4168b2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChangeToAmbient: {fileID: 1683464160}
+  FadeDuration: 10
+  StartColor: {r: 0, g: 0, b: 0, a: 1}
+  EndColor: {r: 0, g: 0, b: 0, a: 0}
+  Incriments:
+  - IncrimentEnd: 0.2
+    IncrimentSpeed: 0.75
+  - IncrimentEnd: 0.5
+    IncrimentSpeed: 2
+  LastIncrimentSpeed: 4
 --- !u!1001 &1103892942
 Prefab:
   m_ObjectHideFlags: 0
@@ -823,7 +845,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1161530882}
-  - component: {fileID: 1161530881}
   - component: {fileID: 1161530883}
   m_Layer: 0
   m_Name: Manager
@@ -832,19 +853,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1161530881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1161530880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e37b18e1de52e4687fe5af4168b2b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 998753390}
-  FadeDuration: 10
 --- !u!4 &1161530882
 Transform:
   m_ObjectHideFlags: 0
@@ -966,8 +974,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1683464159}
   - component: {fileID: 1683464158}
+  - component: {fileID: 1683464160}
   m_Layer: 0
-  m_Name: AmbientMusic
+  m_Name: Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,11 +991,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bfbfce137dee4f240b7c59bb729f2f25, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 52f08a94c6833ed49919ed1a7f4ced54, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1081,6 +1090,21 @@ Transform:
   m_Father: {fileID: 1161530882}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683464160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683464157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafb4304dc25e544db4a43a3c99e5ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartUpAudioClip: {fileID: 8300000, guid: 52f08a94c6833ed49919ed1a7f4ced54, type: 3}
+  AmbientMusic: {fileID: 8300000, guid: bfbfce137dee4f240b7c59bb729f2f25, type: 3}
+  VolumeOnStartUp: 0.75
+  VolumeOnAmbient: 0.5
 --- !u!1 &1959829705
 GameObject:
   m_ObjectHideFlags: 0
