@@ -7,7 +7,9 @@ public class MusicFadeScript : MonoBehaviour
     public AudioClip StartUpAudioClip;
     public AudioClip AmbientMusic;
 
+    [Range(0.0f, 1.0f)]
     public float VolumeOnStartUp = 0.75f;
+    [Range(0.0f, 1.0f)]
     public float VolumeOnAmbient = 0.5f;
 
     private AudioSource sound;
