@@ -10,14 +10,27 @@ public class HandEarthRotationScript : MonoBehaviour
     public float GrabTolerance = 0.75f;
     [Range(0.0f, 1.0f)]
     public float ReleaseTolerance = 0.25f;
+    public float RotationSpeed = 10;
+    public float TempSpeed = 1;
 
-
+    [SerializeField]
     private Transform target;
-    private static bool grabbingTarget;
+
+    [SerializeField]
+    private bool grabbingTarget;
+    [SerializeField]
     private bool touchingTarget;
 
     private Vector3 lastHandPosition;
 
+
+    private void Start() {
+        lastHandPosition = transform.position;
+    }
+
+    /*private void FixedUpdate() {
+        RotateObject();
+    }*/
 
     private void OnTriggerEnter(Collider other)
     {
@@ -37,6 +50,9 @@ public class HandEarthRotationScript : MonoBehaviour
         if (other.CompareTag("Rotatable"))
         {
             touchingTarget = false;
+            if (!grabbingTarget) {
+                CancelInvoke();
+            }
             if(OVRInput.Get(Trigger, Controller) <= ReleaseTolerance)
             {
                 target = null;
@@ -51,8 +67,8 @@ public class HandEarthRotationScript : MonoBehaviour
             grabbingTarget = true;
             CancelInvoke();
             lastHandPosition = transform.position;
-            InvokeRepeating("CheckForRelease", 0.0f, 0.01f);
-            InvokeRepeating("RotateObject", 0.0f, 0.05f);
+            InvokeRepeating("CheckForRelease", 0.0f, 0.1f);
+            InvokeRepeating("RotateObject", 0.0f, 0.1f);
         }
     }
 
@@ -68,13 +84,16 @@ public class HandEarthRotationScript : MonoBehaviour
 
     private void RotateObject()
     {
-        //Rotating object
-        float x = transform.position.x - lastHandPosition.x;
-        float y = transform.position.y - lastHandPosition.y;
-        float z = transform.position.z - lastHandPosition.z;
+        //Times 100 to make the position difference bigger so it can be registered properly
+        Vector3 positionDifference = transform.position * RotationSpeed - lastHandPosition * RotationSpeed;
+        //print("posDif: " + positionDifference + " ::: (" + transform.position + " - " + lastHandPosition);
 
-        Vector3 rotation = new Vector3(x, y, z);
-        target.Rotate(rotation);
+        var currentRot = Quaternion.Euler(target.rotation.eulerAngles);
+        var targetRot = Quaternion.Euler(positionDifference);
+        Quaternion.RotateTowards(target.rotation, targetRot, Time.deltaTime * TempSpeed);
+
+        //target.Rotate(Vector3.up, -positionDifference.x);
+        //target.Rotate(Vector3.right, positionDifference.y);
 
         lastHandPosition = transform.position;
     }
