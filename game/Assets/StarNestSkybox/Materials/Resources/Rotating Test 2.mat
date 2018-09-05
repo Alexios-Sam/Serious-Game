@@ -66,7 +66,7 @@ Material:
     - _DstBlend: 0
     - _Formuparam: 420
     - _Glossiness: 0.5
-    - _Iterations: 17.4
+    - _Iterations: 11.8
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -76,7 +76,7 @@ Material:
     - _StepSize: 234.4
     - _Tile: 769.6
     - _UVSec: 0
-    - _Volsteps: 8
+    - _Volsteps: 4.4
     - _ZWrite: 1
     m_Colors:
     - _Center: {r: 0, g: 0.3, b: 0.5, a: 0}
