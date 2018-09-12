@@ -36,7 +36,7 @@ public class Planet : MonoBehaviour
             InitMaterial(PlanetMaterial);
     }
 
-    private void InitMaterial(Material mat)
+    public void InitMaterial(Material mat)
     {
         mat.SetFloat("_Gamma", gamma);
         mat.SetFloat("fOuterRadius", outerRadius);

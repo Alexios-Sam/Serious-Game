@@ -137,7 +137,7 @@ Material:
     - _BumpScale: 1
     - _CloudShadowsStrength: 0.05
     - _CloudSpeed: -0.1
-    - _CloudStrength: 2
+    - _CloudStrength: 0.1
     - _Contrast: 0.6
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -150,7 +150,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Refraction: 1
-    - _Shininess: 1000
+    - _Shininess: 50
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
