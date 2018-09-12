@@ -15,7 +15,8 @@ public class GameStartFadeIn : MonoBehaviour
     [System.Serializable]
     public class Incriment
     {
-        [Range(0.0f, 1.0f)] public float IncrimentEnd = 0.5f;
+        [Range(0.0f, 1.0f)]
+        public float IncrimentEnd = 0.5f;
         public float IncrimentSpeed = 0.5f;
     }
 

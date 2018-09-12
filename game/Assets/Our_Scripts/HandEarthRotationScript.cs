@@ -15,7 +15,6 @@ public class HandEarthRotationScript : MonoBehaviour
 
     [SerializeField]
     private Transform target;
-
     [SerializeField]
     private bool grabbingTarget;
     [SerializeField]
@@ -84,18 +83,16 @@ public class HandEarthRotationScript : MonoBehaviour
 
     private void RotateObject()
     {
-        //Times 100 to make the position difference bigger so it can be registered properly
+        //Times RotationSpeed (100) to make the position difference bigger so it can be registered properly
         Vector3 positionDifference = transform.position * RotationSpeed - lastHandPosition * RotationSpeed;
-        //print("posDif: " + positionDifference + " ::: (" + transform.position + " - " + lastHandPosition);
 
         var currentRot = Quaternion.Euler(target.rotation.eulerAngles);
         var targetRot = Quaternion.Euler(positionDifference);
-        Quaternion.RotateTowards(target.rotation, targetRot, Time.deltaTime * TempSpeed);
-
-        //target.Rotate(Vector3.up, -positionDifference.x);
-        //target.Rotate(Vector3.right, positionDifference.y);
+        Quaternion.RotateTowards(currentRot, targetRot, Time.deltaTime * TempSpeed);
 
         lastHandPosition = transform.position;
     }
 
+    //target.Rotate(Vector3.up, -positionDifference.x);
+    //target.Rotate(Vector3.right, positionDifference.y);
 }
