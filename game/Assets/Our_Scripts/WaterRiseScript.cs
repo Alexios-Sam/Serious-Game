@@ -6,7 +6,10 @@ public class WaterRiseScript : MonoBehaviour {
 
     public Transform Planet;
     public Material PlanetMat;
+    public Material PlanetMatO;
 
+
+    private bool MatO = true;
     private WaterRiseEffect script_planet;
 
 	// Use this for initialization
@@ -23,7 +26,14 @@ public class WaterRiseScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if(!transform.root.GetComponent<OVRGrabbable>().isGrabbed && other.CompareTag("Hand")) {
-            script_planet.ChangeMat(PlanetMat);
+            if (MatO) {
+                script_planet.ChangeMat(PlanetMat);
+                MatO = false;
+            } else {
+                script_planet.ChangeMat(PlanetMatO);
+                MatO = true;
+            }
+            
         }
     }
 }
